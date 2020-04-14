@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+aside, nav, footer, header, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+  color: #000;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Open Sans";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body.lock {
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  body.lock {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+input, button, textarea {
+  font-family: "Open Sans";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: normal;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #F7F7F7;
+}
+.container {
+  max-width: 1368px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1380pxpx) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.desktop-manager {
+  display: flex;
+  padding: 81px 0 0 0;
+}
+
+.desktop-manager__left-space {
+  width: 100px;
+  background-color: #393A3F;
+}
+
+.desktop-manager__content {
+  background-color: #fff;
+  width: 979px;
+  padding: 20px;
+}
+
+.desktop-manager__title {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-size: 32px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+
+.desktop-manager__button-container {
+  margin-top: 8px;
+  padding-left: 15px;
+  width: 100%;
+  height: 57px;
+  max-width: 938px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.desktop-manager__button {
+  margin-right: 20px;
+  height: 45px;
+  padding: 16px 40px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #556080;
+}
+.desktop-manager__button:hover {
+  cursor: pointer;
+}
+
+.btn-active {
+  color: #CACACA;
+  background-color: #556080;
+}
+
+.shedule {
+  margin-top: 22px;
+  width: 100%;
+}
+
+.shedule__header {
+  padding-left: 20px;
+  padding-right: 32px;
+  height: 60px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shedule__name {
+  color: #2D2E2E;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.shedule__year {
+  color: #232323;
+  font-size: 18px;
+  line-height: 12px;
+  position: relative;
+}
+.shedule__year:before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: -34px;
+  top: -6px;
+  background: url("../img/ic-left.svg") 50% 50% no-repeat;
+}
+.shedule__year:after {
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: -34px;
+  top: -6px;
+  background: url("../img/ic-right.svg") 50% 50% no-repeat;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__header-wrapper {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  background-color: #F7F7F7;
+  font-size: 10px;
+  color: #232323;
+  line-height: 12px;
+}
+
+.table__column-head-stuff {
+  flex: 0 1 12%;
+  text-align: center;
+}
+
+.table__column-head-days {
+  flex: 0 1 6%;
+  text-align: center;
+}
+
+.table__column-head-month {
+  flex: 0 1 6.833333%;
+  text-align: center;
+}
+
+.table__row {
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  border-bottom: 1px solid #f7f7f7;
+}
+.table__cell-stuff {
+  flex: 0 1 12%;
+  display: flex;
+  align-items: center;
+}
+
+.stuff-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.stuff-name {
+  padding-left: 8px;
+  overflow-wrap: anywhere;
+}
+
+.table__cell-days {
+  flex: 0 1 6%;
+  text-align: center;
+}
+
+.table__cell-month {
+  flex: 0 1 6.833333%;
+  text-align: center;
+}
+
+.weeks__wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 2px;
+}
+
+.week {
+  height: 16px;
+}
+
+.day {
+  height: 2.28px;
+  width: 8px;
+  margin-right: 1px;
+  background-color: #f6f6f6;
+}
+
+.week-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.week-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.week-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.week-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.month-3 > .week-2 .day, .month-3 > .week-3 .day, .month-3 > .week-4 .day, .month-3 > .week-5 .day {
+  background-color: #EAF9FF;
+}
+
+.month-4 > .week .day, .month-5 > .week .day, .month-6 > .week .day, .month-7 > .week .day, .month-8 > .week .day, .month-9 > .week .day, .month-10 > .week .day, .month-11 > .week .day, .month-12 > .week .day {
+  background-color: #EAF9FF;
+}
+
+.stuff-1 .table__cell-month .month-3 > .week-2 .day-1, .stuff-1 .table__cell-month .month-3 > .week-2 .day-2, .stuff-1 .table__cell-month .month-3 > .week-2 .day-3 {
+  background-color: #1EBEB4;
+}
+.stuff-1 .table__cell-month .month-5 > .week-4 .day-3, .stuff-1 .table__cell-month .month-5 > .week-4 .day-4, .stuff-1 .table__cell-month .month-5 > .week-4 .day-5 {
+  background-color: #F16953;
+}
+.stuff-1 .table__cell-month .month-9 > .week-3 .day {
+  background-color: #FCC659;
+}
+
+.stuff-2 .table__cell-month .month-7 > .week-2 .day-1, .stuff-2 .table__cell-month .month-7 > .week-2 .day-2, .stuff-2 .table__cell-month .month-7 > .week-2 .day-3 {
+  background-color: #1EBEB4;
+}
+.stuff-2 .table__cell-month .month-6 > .week-4 .day-3, .stuff-2 .table__cell-month .month-6 > .week-4 .day-4, .stuff-2 .table__cell-month .month-6 > .week-4 .day-5 {
+  background-color: #F16953;
+}
+.stuff-2 .table__cell-month .month-11 > .week-3 .day {
+  background-color: #FCC659;
+}
+
+.popup {
+  position: fixed;
+  top: 70%;
+  left: 45%;
+  width: 345px;
+  height: 146px;
+  background: #FFFFFF;
+  box-shadow: 0 0 4px 0 rgba(107, 107, 107, 0.5);
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.popup__stuff-info {
+  display: flex;
+  align-items: center;
+}
+
+.stuff-big-icon {
+  margin-right: 15px;
+}
+
+.stuff-big-name {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+  overflow-wrap: anywhere;
+}
+
+.popup__days-info {
+  margin-top: 20px;
+  display: flex;
+}
+
+.label {
+  margin-right: 10px;
+  width: 12px;
+  height: 16px;
+  background-color: #1EBEB4;
+}
+
+.period {
+  line-height: 18px;
+}
+.period span {
+  color: #AEAEAE;
+}
