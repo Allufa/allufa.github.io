@@ -1,0 +1,1385 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,800|Russo+One&display=swap&subset=cyrillic");
+@import url("../js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css");
+@import url("../js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+aside, nav, footer, header, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+  position: relative;
+  width: 100%;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Roboto";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: "Roboto";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body .lock {
+  overflow: hidden;
+}
+@media (max-width: 1050px) {
+  body .lock {
+    overflow: hidden;
+  }
+}
+
+.btn {
+  font-family: "Russo One";
+  font-size: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+header {
+  height: 60px;
+  background: #273239;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.header__colomn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+@media (max-width: 500px) {
+  .header-logo {
+    margin-left: 20px;
+  }
+}
+
+.header-logo__text {
+  color: #ffffff;
+  font-family: "Russo One";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-right: 20px;
+}
+@media (max-width: 500px) {
+  .header-logo__text {
+    font-size: 20px;
+  }
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-right: 32px;
+}
+.header-menu li {
+  margin-right: 16px;
+}
+.header-menu li:last-child {
+  margin-right: 0px;
+}
+@media (max-width: 1050px) {
+  .header-menu {
+    position: fixed;
+    z-index: 1;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 10px 20px 10px;
+    transition: all 0.5s ease 0s;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header-menu.active {
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+  }
+}
+
+.header-menu__link {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  z-index: 1;
+}
+.header-menu__link:hover {
+  color: #ffaf02;
+}
+@media (max-width: 1050px) {
+  .header-menu__link {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.header-contacts {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+@media (max-width: 700px) {
+  .header-contacts {
+    display: none;
+  }
+}
+.header-contacts a:first-child {
+  margin-right: 4px;
+}
+.header-contacts a:nth-child(2) {
+  margin-right: 9px;
+}
+
+.header-contacts__phone {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.header__burger {
+  z-index: 3;
+  margin-right: 20px;
+  display: none;
+  position: relative;
+  width: 28px;
+  height: 24px;
+}
+.header__burger:after, .header__burger:before {
+  content: " ";
+  background-color: #ffaf02;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+.header__burger:after {
+  bottom: 0;
+}
+.header__burger:before {
+  top: 0;
+}
+.header__burger.active:before {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.header__burger.active:after {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+.header__burger.active span {
+  transform: scale(0);
+}
+.header__burger span {
+  position: absolute;
+  background-color: #ffaf02;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  height: 4px;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 1050px) {
+  .header__burger {
+    display: block;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header__cover {
+    height: 60px;
+    background: #273239;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+}
+
+.section-header {
+  padding-top: 60px;
+  background: url(../img/backing.jpg) 50% 0 no-repeat;
+}
+@media (max-width: 1050px) {
+  .section-header {
+    background: #f0f0f0;
+  }
+}
+
+.section-header__row {
+  width: 100%;
+}
+
+.section-header__title {
+  padding-top: 35px;
+  text-align: center;
+}
+@media (max-width: 1050px) {
+  .section-header__title {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.section-header__text1 span {
+  color: #ffffff;
+  font-family: "Russo One";
+  font-size: 28px;
+  line-height: 45px;
+  padding: 10px;
+  background-color: #ffaf02;
+}
+@media (max-width: 1050px) {
+  .section-header__text1 span {
+    display: block;
+  }
+}
+
+.section-header__text2 {
+  margin-top: 20px;
+}
+.section-header__text2 span {
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.section-header__text3 {
+  margin-top: 23px;
+}
+.section-header__text3 span {
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 24px;
+  padding: 4px 35px 14px;
+  border: 3px solid #ffaf02;
+}
+@media (max-width: 700px) {
+  .section-header__text3 {
+    display: none;
+  }
+}
+
+.section-header-form__container {
+  margin-top: 120px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 1050px) {
+  .section-header-form__container {
+    margin-top: 50px;
+    justify-content: center;
+  }
+}
+
+.section-header-form {
+  position: relative;
+  width: 360px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.form__title {
+  color: #ffaf02;
+  font-family: "Russo One";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.form__subtitle {
+  width: 100%;
+  margin: 10px 20px 0 20px;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.form__order {
+  width: 100%;
+}
+
+.form__user {
+  position: relative;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #ffaf02;
+  margin-top: 18px;
+}
+.form__user label {
+  position: absolute;
+  color: #777777;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+.form__user input {
+  margin-top: 5px;
+  color: #777777;
+  font-size: 16px;
+  width: 100%;
+  line-height: 30px;
+  padding-left: 5px;
+}
+
+label sup {
+  color: red;
+}
+
+.top {
+  display: none;
+}
+
+.form__button {
+  font-family: "Russo One";
+  font-size: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffaf02;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.section-counters {
+  padding-top: 35px;
+  padding-bottom: 48px;
+}
+@media (max-width: 300px) {
+  .section-counters {
+    display: none;
+  }
+}
+
+.container__body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.counters__column {
+  flex: 0 0 25%;
+}
+@media (max-width: 1050px) {
+  .counters__column {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 500px) {
+  .counters__column {
+    flex: 0 0 100%;
+  }
+}
+
+.counter__row {
+  display: flex;
+  justify-content: center;
+}
+
+.counters__numbers {
+  color: #ffffff;
+  font-family: "Russo One";
+  font-size: 48px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 5px;
+  width: 50px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+  background: linear-gradient(180deg, #333333 0%, #333333 50%, #515151 50%, #333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#333333",endColorstr="#333333",GradientType=1);
+}
+
+.counters__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 21px;
+  font-family: "Russo One";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.counters__subtitle {
+  text-align: center;
+  width: 100%;
+  padding: 0 25px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.section-button {
+  background-color: #ffaf02;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+@media (max-width: 300px) {
+  .section-button {
+    display: none;
+  }
+}
+
+.section-button__title {
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+
+.section-button-container {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.section-button-btn {
+  background-color: #ffffff;
+  padding: 17px 60px;
+  font-size: 24px;
+}
+
+.section-inspect {
+  padding-top: 48px;
+  padding-bottom: 75px;
+}
+@media (max-width: 500px) {
+  .section-inspect {
+    display: none;
+  }
+}
+
+.section-inspect__title {
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 32px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.section-inspect__image {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+@media (max-width: 1050px) {
+  .section-inspect__image {
+    margin: 30px 10px;
+  }
+  .section-inspect__image img {
+    width: 100%;
+  }
+}
+
+.section-inspect-container {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.section-inspect__btn {
+  background-color: #ffaf02;
+  padding: 17px 36px;
+  font-size: 24px;
+}
+
+.section-servises {
+  background: url("../img/servise_fon.jpg") 50% 0 no-repeat;
+  padding: 48px 0px 28px 0px;
+}
+@media (max-width: 700px) {
+  .section-servises {
+    background: #333;
+  }
+}
+
+.servises__title {
+  color: #ffffff;
+  font-family: "Russo One";
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .servises__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.servises-wrapper {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servises__item {
+  margin: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex: 0 1 46%;
+}
+@media (max-width: 700px) {
+  .servises__item {
+    flex: 0 1 95%;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .servise__photo {
+    display: none;
+  }
+}
+
+.servise__description {
+  padding: 25px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.servise__title {
+  width: 70%;
+  font-family: "Russo One";
+  font-size: 20px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.servise__list {
+  padding: 20px 0 10px 0;
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+}
+.servise__list li {
+  padding-left: 20px;
+  background: url("../img/icons/servises.png") 0 0 no-repeat;
+  list-style: none;
+}
+
+.servise__price {
+  flex: 1 1 auto;
+  font-family: "Russo One";
+  font-size: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.servise__btn-container {
+  margin: 10px 0 10px 0;
+}
+
+.servise__btn {
+  padding: 13px 37px;
+  background-color: #ffaf02;
+}
+
+.section-extraservise {
+  background-color: #f0f0f0;
+}
+
+.extraservise__title {
+  padding: 40px 0 0 0;
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .extraservise__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.extraservise__column {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 42px;
+  flex-wrap: wrap;
+}
+
+.extraservise__item {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .extraservise__item {
+    flex: 1 1 48%;
+  }
+}
+
+.extraservise__text {
+  margin-top: 17px;
+  text-align: center;
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 20px 40px 0;
+  width: 100%;
+}
+
+.section-why {
+  padding: 5px 0 0px 0;
+}
+
+.why__headtitle {
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .why__headtitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.why__row {
+  margin: 40px 10px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.why__item {
+  flex: 1 1 33.3333%;
+  display: flex;
+  margin-bottom: 50px;
+}
+@media (max-width: 1050px) {
+  .why__item {
+    flex: 1 1 50%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .why__item {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .why__photo {
+    display: none;
+  }
+}
+
+.why__description {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 700px) {
+  .why__description {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.why__title {
+  font-family: "Russo One";
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.why__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.section-risk {
+  background-color: #f0f0f0;
+}
+
+.risk__headtitle {
+  padding-top: 40px;
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+@media (max-width: 700px) {
+  .risk__headtitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.risk__wrap {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.risk__item {
+  flex: 1 1 50%;
+  display: flex;
+  padding: 10px 30px 10px 10px;
+}
+@media (max-width: 700px) {
+  .risk__item {
+    margin: 10px 10px;
+  }
+}
+
+.risk__description {
+  padding: 5px 26px 0px 26px;
+}
+@media (max-width: 700px) {
+  .risk__description {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.risk__title {
+  font-family: "Russo One";
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.risk__text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (max-width: 500px) {
+  .risk__text {
+    display: none;
+  }
+}
+
+.section-risk__btn-container {
+  margin-top: 15px;
+  padding-bottom: 65px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .section-risk__btn-container {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-risk__btn {
+  background-color: #ffaf02;
+  padding: 17px 36px;
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  .section-risk__btn {
+    padding: 17px;
+  }
+  .section-risk__btn span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-calculator {
+    display: none;
+  }
+}
+
+.calculator__body {
+  background: url("../img/calculate.png") 0% 100% no-repeat;
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calculator__form {
+  background-color: #ffaf02;
+  width: 360px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator__title {
+  color: #333333;
+  text-align: center;
+  font-family: "Russo One";
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.calculator__subtitle {
+  width: 100%;
+  margin-top: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 5px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.calculator-form__item {
+  position: relative;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.calculator-form__item select {
+  color: #777777;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 5px;
+  width: 100%;
+  height: 100%;
+}
+.calculator-form__item label {
+  position: absolute;
+  color: #777777;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+.calculator-form__item input {
+  margin-top: 5px;
+  color: #777777;
+  font-size: 16px;
+  width: 100%;
+  line-height: 30px;
+  padding-left: 5px;
+}
+
+.calculator-form__button-container {
+  display: flex;
+}
+
+.calculator-form__button {
+  font-family: "Russo One";
+  font-size: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.section-steps {
+  background: #000000 url("../img/searchfon.png") 50% 0 no-repeat;
+}
+@media (max-width: 500px) {
+  .section-steps {
+    background: #333333;
+  }
+}
+
+.steps__headtitle {
+  padding-top: 48px;
+  color: #ffaf02;
+  font-family: "Russo One";
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .steps__headtitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.steps__list {
+  max-width: 850px;
+  padding: 0 10px 0 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps__item {
+  margin-bottom: 20px;
+  display: flex;
+  padding-right: 60px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .steps__item {
+    padding-right: 0px;
+  }
+}
+
+.steps__counter {
+  color: #ffaf02;
+  font-family: "Russo One";
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  width: 70px;
+  padding-right: 40px;
+}
+@media (max-width: 500px) {
+  .steps__counter {
+    display: none;
+  }
+}
+
+.steps__title {
+  color: #ffaf02;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.steps__text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.steps__item--list {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 18px;
+}
+
+.steps__btn--container {
+  margin-top: 25px;
+  padding-bottom: 72px;
+  text-align: center;
+}
+
+.steps__btn {
+  background-color: #ffaf02;
+  padding: 17px 36px;
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  .steps__btn {
+    padding: 17px 17px;
+  }
+  .steps__btn span:last-child {
+    display: none;
+  }
+}
+
+.review__title {
+  margin-top: 46px;
+  color: #333333;
+  font-family: "Russo One";
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .review__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.review__slider {
+  margin-top: 30px;
+  position: relative;
+}
+
+.prev {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  z-index: 3;
+  cursor: pointer;
+}
+@media (max-width: 1050px) {
+  .prev {
+    display: none;
+  }
+}
+
+.next {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  z-index: 3;
+  cursor: pointer;
+}
+@media (max-width: 1050px) {
+  .next {
+    display: none;
+  }
+}
+
+.carousel__item {
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 940px;
+  display: flex;
+}
+@media (max-width: 1050px) {
+  .carousel__item {
+    margin: 0 10px;
+  }
+}
+
+.review__photo {
+  margin-right: 30px;
+}
+@media (max-width: 500px) {
+  .review__photo {
+    display: none;
+  }
+}
+
+.review__name {
+  font-family: "Russo One";
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.review__car span {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 40px;
+  padding: 10px;
+  background-color: #ffaf02;
+}
+
+.review__text {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.review__link {
+  margin-top: 10px;
+}
+.review__link span {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 11px 22px;
+  background-color: #ffaf02;
+  border-radius: 3px;
+  font-family: "Russo One";
+  cursor: pointer;
+  color: #333;
+}
+@media (max-width: 500px) {
+  .review__link span {
+    display: block;
+    text-align: center;
+  }
+}
+
+.review__btn--container {
+  margin-top: 38px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.review__btn {
+  background-color: #ffaf02;
+  padding: 17px 90px;
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  .review__btn {
+    padding: 17px;
+  }
+}
+
+footer {
+  background-color: #333333;
+}
+
+.footer__column {
+  padding-top: 53px;
+  padding-bottom: 61px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .footer__column {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+.footer__logo {
+  font-family: "Russo One";
+  font-size: 24px;
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .footer__logo {
+    padding-bottom: 20px;
+  }
+}
+
+.footer__text {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+  max-width: 247px;
+}
+@media (max-width: 700px) {
+  .footer__text {
+    display: none;
+  }
+}
+
+.footer__item--row {
+  width: 334px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 60px;
+}
+@media (max-width: 700px) {
+  .footer__item--row {
+    width: 100%;
+  }
+  .footer__item--row:first-child {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 700px) {
+  _:-ms-fullscreen, :root .footer__item--row {
+    height: 50%;
+  }
+}
+
+.footer__item--pics {
+  text-align: right;
+  flex: 0 0 50%;
+  padding-right: 30px;
+}
+@media (max-width: 700px) {
+  .footer__item--pics {
+    padding: 0;
+    flex: 0 0 20%;
+  }
+}
+
+.footer__items-contacts {
+  flex: 0 0 50%;
+}
+@media (max-width: 700px) {
+  .footer__items-contacts {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+
+.footer__phone {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+}
+@media (max-width: 700px) {
+  .footer__phone {
+    font-size: 24px;
+  }
+}
+
+.footer__vk {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.footer__mail {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.background__layer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: #000;
+  opacity: 0.5;
+  display: none;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+@media (max-width: 300px) {
+  .popup {
+    width: 100%;
+  }
+}
+
+.close__popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+.close__popup:before {
+  content: " ";
+  background: #333;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+.close__popup:after {
+  content: " ";
+  background: #333;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(45deg);
+}
