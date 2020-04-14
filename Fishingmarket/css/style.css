@@ -22,7 +22,7 @@
 }
 @font-face {
   font-family: "Panton-semibold";
-  src: url("../fonts/panton-semibold.woff") format("woff"), url("../fonts/Panton-semibold.ttf") format("truetype");
+  src: url("../fonts/Panton-Semibold.woff") format("woff"), url("../fonts/Panton-Semibold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
