@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'PantonSemiBold ';
-    src: local('Panton  SemiBold'), local('Panton--SemiBold'),
-        url('Panton-SemiBold.woff2') format('woff2'),
-        url('Panton-SemiBold.woff') format('woff'),
-        url('Panton-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-  }
