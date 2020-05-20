@@ -40,13 +40,13 @@
 @font-face {
 	font-family: 'Formular';
 	src: url('../fonts/Formular-Light.eot');
-	src: local('☺'), url('fonts/Formular-Light.woff') format('woff'), url('../fonts/Formular-Light.ttf') format('truetype'), url('../fonts/Formular-Light.svg') format('svg');
+	src: local('☺'), url('../fonts/Formular-Light.woff') format('woff'), url('../fonts/Formular-Light.ttf') format('truetype'), url('../fonts/Formular-Light.svg') format('svg');
 	font-weight: 300;
 	font-style: normal;
 }
 
 
-@import url('https:/../fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https:/fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
 	font-family: 'SFUIDisplay';
@@ -295,9 +295,9 @@ margin-top: 74px;
 
 		background: #C4C4C4;
 		border-radius: 32px;
-		background: url('../../img/left-up.png') 0px 0px  no-repeat, url('../img/left-bottom.png')0 100% no-repeat, url('../img/right-up.png')100% 0 no-repeat,  url(../img/background.png) 0 0/cover no-repeat ;
+		background: url('../img/left-up.png') 0px 0px  no-repeat, url('../img/left-bottom.png')0 100% no-repeat, url('../img/right-up.png')100% 0 no-repeat,  url('../img/background.png') 0 0/cover no-repeat ;
 		@media (max-width:1300px) {
-			background: url('../img/left-up.png') 0px 0px/300px 450px  no-repeat, url('../img/left-bottom.png')0 100% no-repeat, url('../img/right-up.png')100% 0 /360px 450px no-repeat,  url(../img/background.png) 0 0/cover no-repeat ;			
+			background: url('../img/left-up.png') 0px 0px/300px 450px  no-repeat, url('../img/left-bottom.png')0 100% no-repeat, url('../img/right-up.png')100% 0 /360px 450px no-repeat,  url('../img/background.png') 0 0/cover no-repeat ;			
 		}
 		@media (max-width:$md2+px) {
 			background:  url('../img/background.png') 50% 0/cover no-repeat ;			
@@ -820,7 +820,7 @@ margin-top: 74px;
 
 //<MODULES>====================================================================================================
 .modules {
-	padding-top: 110px;
+	//padding-top: 110px;
 	padding-bottom: 15px;
 	background: url('../img/background-4.png')   0 0/cover no-repeat;
 	overflow: hidden;
