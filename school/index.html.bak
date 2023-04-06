@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Главная</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+	<!-- <meta name="robots" content="noindex, nofollow" /> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="subcontainer">
+					<div class="header-body">
+						<div class="header__item">
+							<a href="#" class="main-logo">
+								<img src="img/logo.svg" alt="logo">
+								<span class="companyname">ФОТОШОП мастер</span>
+							</a>
+						</div>
+						<div class="header__item rating">
+							<a href="#" class="our-rating">
+								<p>Ресурс <span>№1</span></p>
+								<p>ПО ADOBE PHOTOSHOP В РУНЕТЕ</p>
+							</a>
+						</div>
+						<div class="header__item menu">
+							<nav class="main-menu">
+								<ul>
+									<li class="main-menu__item"><a href="#" >Автор</a></li>
+									<li class="main-menu__item"><a href="#" >Содержание</a></li>
+									<li class="main-menu__item"><a href="#" >Отзывы</a></li>
+									<li class="main-menu__item"><a href="#" >Сертификат</a></li>
+									<li class="main-menu__item"><a href="#" >FAQ</a></li>
+								</ul>
+							</nav>
+						</div>						
+						<div class="header__item">
+							<a href="#" class="submit-button">
+								<div>
+									<span>Записаться</span>
+								</div>
+							</a>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="start">
+			<div class="container start-wallpaper">
+				<div class="subcontainer">
+					<div class="start__wrapper">
+						<div class="start__timer">Cтарт 5 мая</div>
+						<div class="start__course">Онлайн-курс по</div>
+						<div class="start__name-course">
+							<div class="course__name">Веб</div>
+							<div class="course__middle">
+								<div class="course__middle--up">UX</div>
+								<div class="course__middle--center">-</div>
+								<div class="course__middle--down">UI</div>
+							</div>
+							<div class="course__end">дизайну</div>
+						</div>
+						<div class="start__motivation">
+							<p>Освой перспективную профессию веб-дизайнера, <b>с возможностью трудоустройства</b></p>
+						</div>
+						<div class="feauters">
+							<div class="feauters__item-border">
+								<div class="feauters__item">
+									<div class="feauters__icon">
+										<img src="img/mainlist-1.svg" alt="">
+									</div>
+									<div class="feauters__description">
+										<p>Домашние задания</p>
+									</div>
+								</div>
+							</div>
+							<div class="feauters__item-border">
+								<div class="feauters__item">
+									<div class="feauters__icon">
+										<img src="img/mainlist-2.svg" alt="">
+									</div>
+									<div class="feauters__description">
+										<p>Закрытый чат</p>
+									</div>
+								</div>
+							</div>
+							<div class="feauters__item-border">
+								<div class="feauters__item">
+									<div class="feauters__icon">
+										<img src="img/mainlist-3.svg" alt="">
+									</div>
+									<div class="feauters__description">
+										<p>Ежедневная поддержка</p>
+									</div>
+								</div>
+							</div>
+							<div class="feauters__item-border">
+								<div class="feauters__item">
+									<div class="feauters__icon">
+										<img src="img/mainlist-4.svg" alt="">
+									</div>
+									<div class="feauters__description">
+										<p>6 модулей, 103 урока</p>
+									</div>
+								</div>
+							</div>
+							<div class="feauters__item-border">
+								<div class="feauters__item">
+									<div class="feauters__icon">
+										<img src="img/mainlist-5.svg" alt="">
+									</div>
+									<div class="feauters__description">
+										<p>+5 работ в портфолио</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="curse__autor">
+							<div class="autor__foto">
+								<img src="img/designer.jpg" alt="">
+							</div>
+							<div class="autor__description">
+								<p>Автор Даниил Волосатов – профессиональный <span style="white-space: nowrap;">веб-дизайнер</span> с 10 летним стажем.</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+
+			</div>
+		</section>
+		<section class="coursefor">
+			<div class="container">
+				<div class="subcontainer">
+					<div class="title-section">
+						<p>Курс подходит <span>для тех, кто хочет:</span></p>
+					</div>
+					<div class="reasons__wrapper">
+						<div class="reasons__item">
+							<div class="reason__number">01</div>
+							<div class="reason__item-wrapper">
+								<div class="reasons__img"><img src="img/undraw_1.svg" alt=""></div>
+								<div class="reasons__text">Освоить востребованную профессию</div>
+							</div>	
+						</div>
+						<div class="reasons__item">
+							<div class="reason__number">02</div>
+							<div class="reason__item-wrapper">
+								<div class="reasons__img"><img src="img/undraw_2.svg" alt=""></div>
+								<div class="reasons__text">Работать удаленно, без фиксированого графика</div>
+							</div>
+						</div>
+						<div class="reasons__item">
+							<div class="reason__number">03</div>
+							<div class="reason__item-wrapper">
+								<div class="reasons__img"><img src="img/undraw_3.svg" alt=""></div>
+								<div class="reasons__text">Научиться создавать дизайны сайтов, любой сложности</div>
+							</div>
+						</div>
+						<div class="reasons__item">
+							<div class="reason__number">04</div>
+							<div class="reason__item-wrapper">
+								<div class="reasons__img"><img src="img/undraw_4.svg" alt=""></div>
+								<div class="reasons__text">Зарабатывать столько, сколько ты сам захочешь</div>
+							</div>
+						</div>
+						<div class="reasons__item">
+							<div class="reason__number">05</div>
+							<div class="reason__item-wrapper">
+								<div class="reasons__img"><img src="img/undraw_5.svg" alt=""></div>
+								<div class="reasons__text">Пополнить свое портфолио на 7 новых работ</div>
+							</div>
+						</div>
+						<div class="reasons__item">
+							<div class="reason__number">06</div>
+							<div class="reason__item-wrapper">
+								<div class="reasons__img"><img src="img/undraw_6.svg" alt=""></div>
+								<div class="reasons__text">Путешествовать и совмещать работу</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="topprofession">
+			<div class="container topprofession-background">
+				<div class="subcontainer topprofession-subcontainer ">
+					<div class="title-section topprofession-title">
+						<p>Направление веб-дизайнера, входит в <span> топ 5 профессий</span> в интернете </p>
+					</div>
+					<div class="subtitle-section topprofession-subtitle">
+						<p>Средний заработок веб-дизайнера по данным hh.ru 65 000 рублей</p>
+					</div>
+					<div class="salary__item-text">
+						<p>Лендинг (одна страница) - <br> <b>от 14 000 рублей</b></p>
+						<p>Баннеры (до 10 штук) - <br><b>от 9 000 рублей</b></p>
+						<p>Сайты (от 3 страниц) - <br><b>от 21 000 рублей</b></p>
+						<p>Страница для социальной сети - <br><b>от 8 000 рублей</b></p>
+						<p>Интерфейс - <br><b>от 9000 рублей</b> </p>
+						<p>Логотип и фирменный стиль - <br><b>от 21 000 рублей</b> </p>
+						<p>Логотип - <br><b>от 12 000 рублей</b> </p>
+						<p>Макет еmail-рассылки - <br><b>от 8000 рублей</b></p>
+						<p>Мобильное приложение - <br><b>от 17 000 рублей</b></p>
+						<p>Презентация - <br><b>от 8000 рублей</b></p>
+					</div>
+
+						<div class="phone">
+							<div class="phone__wrapper">
+								<div class="phone__round"></div>
+								<div class="phone__collage">
+									<img class="phone-frame" src="img/hand-phone.png" alt="">
+									<img class="phone-text" src="img/hand-phone-text.png" alt="">
+								</div>
+								<div class="phone__vacancy">
+									<p class="mainscreen">Прямо <br> сейчас <b>1200 <br> вакансий</b> для <br> дизайнеров <br> только на <br> одном hh.ru</p>
+									<p class="mobilescreen">Прямо <br> сейчас <b>1200 </b> <br> компаний ищут <br> дизайнеров только <br> на одном hh.ru</p>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+			</div>
+		</section>
+		<section class="modules">
+			<div class="container">
+				<div class="subcontainer modules-subcontainer">
+					<div class="title-section modules-title">Курс состоит <span>из 6<span>-ти</span> модулей</span></div>
+					<div class="boxes__wrapper">
+						<div class="boxes__item">
+							<img src="img/courses-6.png" alt="">
+						</div>
+						<div class="boxes__item">
+							<img src="img/courses-5.png" alt="">
+						</div>
+						<div class="boxes__item">
+							<img src="img/courses-4.png" alt="">
+						</div>
+						<div class="boxes__item">
+							<img src="img/courses-3.png" alt="">
+						</div>
+						<div class="boxes__item">
+							<img src="img/courses-2.png" alt="">
+						</div>
+						<div class="boxes__item">
+							<img src="img/courses-1.png" alt="">
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+			<footer>
+			<div class='container'>
+				<div class="footer-body">
+					
+				</div>
+			</div>
+	</footer>
+	</div>
+
+
+<!--
+	<div class="popup">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title"></div>
+				<div class="popup__txt"></div>
+				<form action="#" class="popup-form form">
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req email" />
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req" />
+					</div>
+					<div class="form-button">
+						<button type="submit" class="form__btn btn fw"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup-video">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-close"></div>
+			<div class="popup-video__value"></div>
+		</div>
+	</div>
+-->
+</div>
+<!--	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+<!--<script src="js/vendors.js"></script>-->
+<script src="js/main.js"></script>
+<!--<script src="js/custom.js" ></script>-->
+
+</body>
+</html>
